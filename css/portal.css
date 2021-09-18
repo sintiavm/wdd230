@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+    background-color: #D9A78B;
+    font-family: 'Glegoo', serif;
+   
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #F2CCB6;
+}
+h2 {
+    color: #1F818C;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #273859;
+    border-radius: 15px;
+    height: 100px;
+    color: #F2CCB6;
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+img {
+display: flex;
+margin: 7px;
+margin-top: 1px;
+border-radius: 15px;
+width: 170px; height: 220px;
+}
+.currentdate {
+color : #F2CCB6;
+}
+
+picture {
+position: absolute;
+top: 50px;
+right: 300px;
+
+}
+
+ul {
+    color: #273859;
+    font-size: 1rem; 
+         
+}   
+
+li a {
+    color: #734A3C;
+    font-size: 1.5rem;
+    
+}
