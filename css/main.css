@@ -1,13 +1,15 @@
 body {
     font-size: 16px;
     background-color: #D9A78B;
-
-   
+    line-height: 1.5;
+    font-family: 'Koh Santepheap', cursive;
+    color: #F2CCB6;
+    height: 100%;   
 }
 
 h1 {
-    font-size: 2.5em;
-
+    font-size: 1.5em;
+    margin: 0.15rem;
     font-family: 'Koh Santepheap', cursive;
 }
 h2 {
@@ -18,45 +20,54 @@ h2 {
    
 }
 
-header, footer {
-    background-color: #273859;
-    border-radius: 15px;
-    height: 100px;
-    color: #F2CCB6;
-    text-align: center;
-    padding: 1.5rem;
-    
+header, nav, footer {
+    margin:0 auto;
+    padding: 0.75rem;
+    max-width: 45rem;
+    height: 20px;
+    color: #F2CCB6;       
 }
-img {
+header {
+    margin-top: 10px;
+}
+header nav {
+    background-color: #273859;
+}
+header, footer{
+    text-align: center;
+    background-color: #273859;
+    border-radius: 10px;
+}
+main {
+    width: 60%;
+    margin: auto;
+}
+header img {
 display: flex;
 margin: 7px;
 margin-top: 1px;
 border-radius: 15px;
-width: 170px; height: 220px;
+width: 170px;
+height: auto;
+float: right;
 }
 .currentdate {
 color : #F2CCB6;
 }
-
-picture {
-position: absolute;
-top: 50px;
-right: 300px;
-
-}
-
 ul {
     color: #273859;
-    font-size: 1rem; 
-    font-family: 'Roboto Condensed', sans-serif;
-         
+       
 }   
-
 li a {
     color: #734A3C;
     font-size: 1.5rem;
     font-family: 'Roboto Condensed', sans-serif;
-    
-}
+  }
+  footer{
+      font-size: 0.8rem;
+  }
+  footer a {
+      color:#F2CCB6
+  }
 #currentdate {color:#F2CCB6; }
 font-family: 'Koh Santepheap', cursive;
