@@ -1,0 +1,169 @@
+@media only screen and (min-width: 37.5em)
+{
+nav ul {
+        display: flex;
+        max-width: 900px;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+	    padding: 0;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+nav ul li {
+        flex: 1 1 100%;
+
+    }
+section{
+        display: flex;  
+    }
+}
+body {
+    font-family: 'Glegoo', serif;
+}
+h1 {
+    color: #F28705;
+}
+header{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0.75rem;
+    background-color: #284259;
+    border: solid 3px;
+    border-color: #a5a5a5;
+    border-radius: 10px;
+}
+
+header div{
+  text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #284259;
+}
+
+nav a:hover{
+    background-color: white;
+    color: #284259;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 0.75rem;
+    border-radius: 30px;
+    border: solid beige;
+    color:white;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+img {
+    max-width: 100px;
+}
+
+.imgPersona{
+    max-width:100%;
+    width: 300px;
+    height: 300px;
+    margin: 0.5rem;
+    border-radius: 30px;
+    border: solid #284259;
+}
+
+.target{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0.75rem;
+  }
+ 
+#colorPallet{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border: none;
+    background-color: #284259;;
+    color: #284259;;
+    height: 2px;
+   }
+
+h2{
+    text-indent: 10px;
+  }
+
+h3{
+    text-indent: 40px;
+  }
+
+h4{
+    text-indent: 40px;
+}
+
+p{
+    text-indent: 50px;
+  }
+
+h5{
+    font-size: 15px;
+}
+
+footer{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0.75rem;
+    background-color: #284259;
+    color: #1ECCCC;
+    border: solid 2px;
+    border-color: beige;
+    border-radius: 10px;
+}
+
+#copyright{
+    font-size: 1em;
+    margin-top: 6px;
+}
+
+#lastUpdate{
+    color: yellow;
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+
+#refSpan{
+    color: #F28705;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+footer a{
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+picture{
+    display: flex;
+    float: inherit;
+    
+}
+
+
+
