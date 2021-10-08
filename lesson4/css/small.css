@@ -27,10 +27,16 @@ header img {
     color: #F28705;
 
 }
+h2 {
+    color: #273859;
+    font-size: 2rem;
+    text-align: center;
+  
+}
 .m {
     font-style: italic;
     letter-spacing: 1pt;
-    color: darkkhaki;
+    color: #a5a5a5;
     margin-left: 20px;
     font-size: .9rem;
 }
@@ -39,9 +45,10 @@ header img {
    margin: 10px auto;
    border: 1px #ffffff;
    padding: 15px;
-   background-color: #284259;
-   color:#F28705;
+   background-color: #1F818C;
+   color:white;
    font-style: italic;
+   max-width: 560px;
 }
 
 main, footer {
@@ -80,7 +87,7 @@ nav {
 }
 .navigation a:hover {
 	color: white;
-	background-color: #a5a5a5;
+	background-color: #1F818C;
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
@@ -106,14 +113,17 @@ nav {
 		display: none;
 	}
 }
-#currentdate {color:#1F818C;
+#currentdate {color:#F28705;
     
  }
 
 footer {
-    margin:0 auto;
-    padding: 0.75rem;
-    max-width: 45rem;
+    padding: 2rem;
     height: 20px;
-    color: #F2CCB6;
+    color: #a5a5a5;
+    text-align: center;
+    background-color: #273859;
+    max-width: 960px;
+    margin: 0 auto;
+
 }
