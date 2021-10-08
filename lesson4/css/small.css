@@ -37,7 +37,7 @@ header img {
 .contentbox{
    display: block; 
    margin: 10px auto;
-   border: 1px #F28705;
+   border: 1px #ffffff;
    padding: 15px;
    background-color: #284259;
    color:#F28705;
@@ -57,7 +57,7 @@ footer {
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: tomato;
+	background-color: #F28705;
 }
 .navigation {
 	list-style: none;
