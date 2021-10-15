@@ -112,6 +112,57 @@ p {
     color: white;
     justify-content: center;
 }
+.social-networks {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.social-networks .fab{
+    margin: 0 15px;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    }
+.social-networks .icon1:hover{
+    color: #284259;
+  
+}
+.social-networks .icon2:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon3:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon4:hover{
+  color: #284259;
+  
+}
+.facebook{
+   max-width: 100%;
+}
+.contentboxcontact{
+padding:10px;
+text-align: center;
+position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+}
+
+
 main, footer {
     font-family: 'Glegoo', serif;
 }
@@ -158,33 +209,3 @@ nav {
 	display: block;
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-}
-#currentdate {color:#F28705;
-    
- }
-
-footer {
-    padding: 2rem;
-    height: 20px;
-    color: #a5a5a5;
-    text-align: center;
-    background-color: #273859;
-    max-width: 960px;
-    margin: 0 auto;
-
-}
