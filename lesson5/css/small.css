@@ -208,4 +208,103 @@ nav {
 .responsive li {
 	display: block;
 }
+footer {
+    padding: 2rem;
+    height: 20px;
+    color: #a5a5a5;
+    text-align: center;
+    background-color: #273859;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+#currentdate {color:#F28705;
+    
+}
+/* pop up*/
+.box {
+    width: 20%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid orange;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: red;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay:target {
+    visibility: hidden;
+    opacity: 0;
+    display:none
+  }
+.popup { 
+    position: relative;
+    margin: 70px auto;
+    padding: 20px;
+    background: #F28705;
+    border-radius: 5px;
+    width: 20%;
+    transition: all 5s ease-in-out; }
+
+.popup .close{ 
+    position: absolute; 
+    top: 20px; right: 30px;
+    transition: all 200ms;
+    font-size: 30px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #333; }
+.popup .close:hover { color: #273859; }
+.popup .content     { max-height: 30%; overflow: auto; }
+
+/*.popup h2 { margin-top: 0; color: #333; font-family: Tahoma, Arial, sans-serif; }*/
+/*end pop up*/
+@media only screen and (min-width:700px) {
+	.headings h1 {
+		font-size: 3rem;
+	}
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
 
