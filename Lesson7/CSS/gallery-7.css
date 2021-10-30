@@ -1,131 +1,184 @@
 
 body {
-    background-color: #78BF91;
-	padding: 0;
-	margin: 0;
+    background-color: #a5a5a5;
+    padding: 0;
+    margin: 0;
 }
-header, nav {
-	font-size: 14px;
-	font-family: 'Glegoo', serif;
+header {
+    background-color: #284259;
+    padding: 5px 0;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Glegoo', serif;
 }
+
+header img {
+    width: 88px;
+    height: auto;
+}
+
+.headings {
+    display:flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 3rem;
+    margin: 0 0 0 17px;
+    color: #F28705;
+
+}
+h2 {
+    color: #284259;
+    font-size: 2rem;
+    text-align: center;
+  
+}
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #a5a5a5;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+.social-networks {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.social-networks .fab{
+    margin: 0 15px;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    }
+.social-networks .icon1:hover{
+    color: #284259;
+  
+}
+.social-networks .icon2:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon3:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon4:hover{
+  color: #284259;
+  
+}
+.facebook{
+   max-width: 100%;
+}
+.contentboxcontact{
+padding:10px;
+text-align: center;
+position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+}
+
+
 main, footer {
     font-family: 'Glegoo', serif;
 }
 header,
-main,
-footer {
+main {
 	max-width: 960px;
     margin: 0 auto;
 }
-header,
-footer {
-	max-width: 960px;
-    margin: 0 auto;
-}
-header, footer {
-	background-color: #3CA661;
-	padding: 5px 0;
-	display: flexbox;
-	align-items:center;
-	justify-content:center;
-	text-align: center;
-}
-.m {
-	font-style: italic;
-	letter-spacing: 1pt;
-	color: #D9D0D6;
-	margin-left: 20px;
-	font-size: .9rem;
-}
-header img {
-	width: 100px;
-	height: auto;
-}
-.headings h1 {
-	font-size: 3rem;
-}
+/* Small/Phone View ***************/
 nav {
 	margin: 0 auto;
 	max-width: 960px;
-	background-color: #3CA661;
-	color: #D9D0D6
+	background-color: #F28705;
 }
-nav li:hover{
-    background-color: #78BF91;
-    color: #D9D0D6;
+.navigation {
+	list-style: none;
+	padding: 0;
 }
-nav li:focus{
-    text-decoration: underline;
-    background-color: #78BF91;
-    color: #D9D0D6;
+.navigation li:first-child {
+	display: block;
 }
-nav {
-	margin: 0 auto;
-	max-width: 960px;
-	background-color: #3CA661;
-	color: #D9D0D6
+.navigation li {
+	display: none;
 }
-nav ul.hide {display: none;}
-
-#newNav {
-    list-style: none;
-    text-align: center;
-	padding: 15px;
-}
-#menu{
-    margin: 0 auto;
-	max-width: 960px;
-	background-color: #3CA661;
-    display: block;
-	padding: 0.75rem;
-	text-align: center;
-	text-decoration: none;
-	color: #D9D0D6;
-	font-weight: 700;
-}
-.navigation a
- {
+.navigation a {
 	display: block;
 	padding: 0.75rem;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
-	color: white;
+	color: #273859;
 	font-weight: 700;
+	transition: 0.5s;
 }
 .navigation a:hover {
-	color: #3CA661;
-	background-color: #78BF91;
+	color: white;
+	background-color: #1F818C;
 }
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
 .responsive li {
 	display: block;
 }
-.active {
-	color: #78BF91;
+footer {
+    padding: 2rem;
+    height: 20px;
+    color: #a5a5a5;
+    text-align: center;
+    background-color: #273859;
+    max-width: 960px;
+    margin: 0 auto;
+
 }
-#newNav {
-	display: flex;
-}
-   #newNav li {
-	display: block; 
-	flex: 1 1 100%;
-}
-#newNav a {
-	text-align: center;
-}
-#newNav li:first-child {
-	display: none;
+#currentdate {color:#F28705;
+    
 }
 
 img {
 	width:400px;
 	height:300px;
 	border-radius:9px;
+    margin:10px 10px 10px 10px;
+	display: inline-block;
+	}
+
+@media only screen and (min-width:700px) {
+	.headings h1 {
+		font-size: 3rem;
+	}
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
 }
-table
-{position:relative; margin:70px auto; border-spacing:5px;
-}
-p
-{color:white; position:relative; top:30px; font-size:30px; text-align:center;}
-
-
-
