@@ -1,0 +1,46 @@
+.thanks {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-family: 'Glegoo', serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #F28705;
+    font-size: 50px;
+  }
+  
+  .home a{
+    color: white;
+    background: #F28705;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #F28705;
+    display: block;
+    margin: 0 auto 10px;
+    width: 50%;
+    padding: 1em;
+    line-height: 1px;
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+  }
+  
+  .home:hover {
+    outline: none;
+        -moz-transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      transform: scale(1.02);
+	
+  }
+  

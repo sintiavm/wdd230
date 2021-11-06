@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5fb2b8bf7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/storm.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Preston</title>
+    
+</head>
+<body>
+    <header>
+    
+        <picture>
+          <img src="images/icon.png" alt="weather logo">
+        </picture>
+        <section class="headings">
+          <h1>Temperature Mood</h1>
+         <div class="m">Daily Weather</div>
+      </section>
+      </header>
+      <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="/lesson6/preston-6.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="/Lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+        
+              <!-- Form Name -->
+              <legend>Reporter Information!</legend>
+        
+              <!-- Text input-->
+        
+              <div class="form-group">
+                <label class="col-md-4 control-label">Full Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+        
+        
+              <!-- Text input-->
+        
+              <div class="form-group">
+                <label class="col-md-4 control-label">Phone Nº</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Text input-->
+        
+              <div class="form-group">
+                <label class="col-md-4 control-label">Zip Code</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+              </div>
+        
+            </fieldset>
+          </form>
+          <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+        
+              <!-- Form Name -->
+              <legend>Storm Details</legend>
+              <div class="form-group">
+                <label class="col-md-4 control-label">Storm Date</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                    <input name="website" placeholder="Storm Date" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="form-group">
+                <label class="col-md-4 control-label">Storm Type</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="Storm Type" class="form-control" type="text">
+                  </div>
+                </div>
+              </div>
+              <fieldset>
+                <label class="flexly" for="rating">Storm Severity (1 - 10): 5: &nbsp;&nbsp;&nbsp;
+                  <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                  <span id="ratingvalue">5</span>
+                </label>
+        
+                <datalist id="tickmarks">
+                  <option value="0">
+                  <option value="1">
+                  <option value="2">
+                  <option value="3">
+                  <option value="4">
+                  <option value="5">
+                  <option value="6">
+                  <option value="7">
+                  <option value="8">
+                  <option value="9">
+                  <option value="10">
+                </datalist>
+              </fieldset>
+              <div class="form-group">
+                <label class="col-md-4 control-label">Storm Region</label>
+                <div class="col-md-4 selectContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="Storm Region" class="form-control selectpicker">
+                      <option value=" ">Please Select Regions</option>
+                      <option> Preston</option>
+                      <option>Soda Springs</option>
+                      <option>Fish Haven</option>
+        
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        
+          <!-- radio checks -->
+          <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <fieldset>
+        
+              <!-- Form Name -->
+              <legend>Storm Details</legend>
+              <div class="form-group">
+                <label class="col-md-4 control-label">Are You in Danger?</label>
+                <div class="col-md-4">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hosting" value="yes" /> Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hosting" value="no" /> No
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="hosting" value="yes" /> Maybe
+                    </label>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Text area -->
+        
+              <div class="form-group">
+                <label class="col-md-4 control-label">Additional Comments</label>
+                <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <textarea class="form-control" name="Additional Comments" placeholder="Aditional Information"></textarea>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <!-- Success message -->
+          <div class="alert alert-success" role="alert" id="success_message">Success <i
+              class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+        
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-warning"><a href="/lesson8/thanks.html">Send</a> <span class="glyphicon glyphicon-send"></span></button>
+            </div>
+          </div>
+        <h2>
+            Contact Us
+        </h2>
+        <div class="contentboxcontact">
+
+        <section id="contact-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23683.124776755605!2d-111.90229833209203!3d42.09910477758712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1621664797182!5m2!1ses-419!2spe" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+           <h5>
+            Predictable Weather
+        
+            567 N. 300 E.<br>
+            Preston ID. 83263
+            888-999-0000
+            temperaturemoo@email.com
+        </h5>
+        </section> 
+            <div class="social-networks">
+               <a href="#" class="facebook"><i class="fab fa-facebook icon1"></i></a>
+               <a href="#" class="instagram"><i class="fab fa-instagram-square icon2"></i></a>
+               <a href="#" class="pinterest"><i class="fab fa-pinterest icon3"></i></a>
+               <a href="#" class="whatsapp"><i class="fab fa-whatsapp-square icon4"></i></a>
+    </div>
+        </div>
+    
+    
+    </main> 
+    <footer>
+             &copy; 2021 | Sintia V. marin | AQP-Peru | <a href ="https://www.byui.edu/online"></a>https://www.byui.edu/online</a> | Today's Date: <span id="currentdate"></span>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

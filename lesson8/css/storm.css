@@ -1,0 +1,233 @@
+body {
+    background-color: #a5a5a5;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #284259;
+    padding: 5px 0;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Glegoo', serif;
+}
+
+header img {
+    width: 88px;
+    height: auto;
+}
+
+.headings {
+    display:flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 3rem;
+    margin: 0 0 0 17px;
+    color: #F28705;
+
+}
+h2 {
+    color: #284259;
+    font-size: 2rem;
+    text-align: center;
+  
+}
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #a5a5a5;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+form {
+    display: table;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: #D9D0D6;
+      
+        
+}
+
+div.form-group {
+    display: table-row;
+    
+   
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+   
+}
+
+label {
+    padding-right: 10px;
+    width: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+      
+    
+}
+.alert {
+    align-items:center;
+	justify-content:center;
+	text-align: center;
+    padding: 20px 0;
+	display: flexbox;
+
+}
+.btn {
+    padding: 20px 0;
+    border-radius: 20px;
+    padding: 10px 50px;
+    margin: 10px;
+    text-decoration: none;
+    width: 170px;
+    margin-left: 400px;
+    margin-right: 1060px;
+    color:midnightblue;
+    background-color: #F28705;
+	}
+h1 {
+    color:#D9D0D6;
+}
+.social-networks {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.social-networks .fab{
+    margin: 0 15px;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    }
+.social-networks .icon1:hover{
+    color: #284259;
+  
+}
+.social-networks .icon2:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon3:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon4:hover{
+  color: #284259;
+  
+}
+.facebook{
+   max-width: 100%;
+}
+.contentboxcontact{
+padding:10px;
+text-align: center;
+position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+}
+
+
+main, footer {
+    font-family: 'Glegoo', serif;
+}
+header,
+main,
+footer {
+	max-width: 960px;
+    margin: 0 auto;
+}
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 960px;
+	background-color: #F28705;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #273859;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #1F818C;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+footer {
+    padding: 2rem;
+    height: 20px;
+    color: #a5a5a5;
+    text-align: center;
+    background-color: #273859;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+#currentdate {color:#F28705;
+    
+}
+
+/*.popup h2 { margin-top: 0; color: #333; font-family: Tahoma, Arial, sans-serif; }*/
+/*end pop up*/
+@media only screen and (min-width:700px) {
+	.headings h1 {
+		font-size: 3rem;
+	}
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
