@@ -4,7 +4,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     
-    
 }
 
 .cards section {
@@ -14,13 +13,14 @@
     
 }
 
-.cards section h3 {
+.cards section h4 {
     margin-top: 0px;
     color: white;
+    text-align: center;
     
 }
 
-.cards section p, .cards section h4 {
+.cards section p, .cards section h3 {
     text-align: center;
     color: white;
 }
