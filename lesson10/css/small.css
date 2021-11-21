@@ -1,0 +1,224 @@
+body {
+    background-color: #a5a5a5;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #284259;
+    padding: 5px 0;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Glegoo', serif;
+}
+
+header img {
+    width: 88px;
+    height: auto;
+}
+
+.headings {
+    display:flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 3rem;
+    margin: 0 0 0 17px;
+    color: #F28705;
+	
+}
+h2 {
+    color: #284259;
+    font-size: 2rem;
+    text-align: center;
+}
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #a5a5a5;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+.contentbox{
+   display: block; 
+   margin: 5px auto;
+   border: 1px #ffffff;
+   padding: 15px;
+   background-color: #1F818C;
+   color:white;
+   font-style: italic;
+   max-width: 1000px;
+}
+.contentbox img {
+	width: 925px;
+    height: 390px;
+}
+.fifcation{
+    position: relative;
+}
+.weathersummary {
+	position:absolute;
+	border: 1px dashed #94A6A4;
+	background-color: #D9D0D6;
+	color: #284259;
+	font-size: 11px;
+    top: 240px;
+    left: 270px;
+    width: 250px;
+    height: 380px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.cards img  {
+	width:300px;
+	height:200px;
+	border-radius:9px;
+  
+}
+
+#contact-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+/*social*/
+.social-networks {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.social-networks .fab{
+    margin: 0 15px;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    }
+.social-networks .icon1:hover{
+    color: #284259;
+  
+}
+.social-networks .icon2:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon3:hover{
+    color: #284259;
+  
+}
+
+.social-networks .icon4:hover{
+  color: #284259;
+  
+}
+.facebook{
+   max-width: 100%;
+}
+.contentboxcontact{
+padding:10px;
+text-align: center;
+position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+}
+
+main, footer {
+    font-family: 'Glegoo', serif;
+}
+header,
+main,
+footer {
+	max-width: 960px;
+    margin: 0 auto;
+}
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 960px;
+	background-color: #F28705;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #273859;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #1F818C;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+footer {
+    padding: 2rem;
+    height: 20px;
+    color: #a5a5a5;
+    text-align: center;
+    background-color: #273859;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+#currentdate {color:#F28705;
+    
+}
+@media only screen and (min-width:700px) {
+	.headings h1 {
+		font-size: 3rem;
+	}
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+
+
+
